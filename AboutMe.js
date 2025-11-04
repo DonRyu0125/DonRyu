@@ -7,3 +7,4 @@ class Don_Ryu{
 }
 
 // console.log('test')
+// console.log('test2')
