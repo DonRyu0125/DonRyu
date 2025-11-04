@@ -6,4 +6,4 @@ class Don_Ryu{
     others = ['AWS','Node','Ubuntu']
 }
 
-
+// console.log('test')
