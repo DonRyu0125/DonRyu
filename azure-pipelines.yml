@@ -1,0 +1,16 @@
+trigger:
+  branches:
+    include:
+      - dev
+
+pool:
+  name: 'Default'
+
+steps:
+  - checkout: self
+
+  - script: |
+      echo "Starting auto-deploy on 084 server..."
+      git pull origin dev
+      echo "✅ Build and update complete on 084"
+    displayName: 'Auto Pull and Build'
