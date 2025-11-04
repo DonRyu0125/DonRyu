@@ -7,11 +7,11 @@ pool:
   name: 'Default'
 
 steps:
-  - checkout: self
-
   - script: |
-      echo "Starting auto-deploy on 084 server..."
+      echo "🚀 Starting auto-deploy on 084 server..."
+      cd C:\Users\don\Desktop\DonRyu
       git fetch origin dev
       git reset --hard origin/dev
-      echo "✅ Build and update complete on 084"
-    displayName: 'Auto Pull and Build'
+      npx vite build
+      echo "✅ Build complete on 084 server"
+    displayName: 'Pull and Build (No Install)'
