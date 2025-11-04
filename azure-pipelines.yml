@@ -13,7 +13,5 @@ steps:
       echo "Starting auto-deploy on 084 server..."
       git fetch origin dev
       git reset --hard origin/dev
-      npm install
-      npx vite build
       echo "✅ Build and update complete on 084"
     displayName: 'Auto Pull and Build'
