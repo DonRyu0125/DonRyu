@@ -9,7 +9,8 @@ pool:
 steps:
   - script: |
       echo "🚀 Starting auto-deploy on 084 server..."
-      cd C:\Users\don\Desktop\DonRyu
-      git pull origin dev
+      cd C:\deploy\DonRyu
+      git fetch origin dev
+      git reset --hard origin/dev
       echo "✅ Build complete on 084 server"
     displayName: 'Pull and Build (No Install)'
