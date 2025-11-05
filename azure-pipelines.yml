@@ -10,7 +10,6 @@ steps:
   - script: |
       echo "🚀 Starting auto-deploy on 084 server..."
       cd C:\Users\don\Desktop\DonRyu
-      git fetch origin dev
-      git reset --hard origin/dev
+      git pull origin dev
       echo "✅ Build complete on 084 server"
     displayName: 'Pull and Build (No Install)'
